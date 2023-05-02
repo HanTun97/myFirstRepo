@@ -1,0 +1,42 @@
+body {
+    background-color: gray;
+    font-family: Arial, 'Arial Black', Verdana, 'Trebuchet MS', Georgia, Tahoma, 'Courier New', 'Times New Roman';
+}
+
+h1 {
+    color: skyblue;
+    font-size: 4em;
+}
+
+h2 {
+    color: lightblue;
+    font-weight: bold;
+}
+
+div>p>span {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+li, div>span {
+    color: white;
+    line-height: 30px;
+}
+
+a {
+    color: red;
+}
+
+.imgStyle{
+    width: 300px;
+    height: 300px;
+}
+
+footer p {
+    text-align: right;
+}
+
+footer img {
+    width: 90px;
+    height: 40px;
+}
