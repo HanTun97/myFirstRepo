@@ -1,6 +1,7 @@
  body {
 	padding: 0;
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 nav {
 	position: fixed;
@@ -10,7 +11,9 @@ nav {
 	top: 0;
 	font-family: 'Montserrat', sans-serif;
 	padding-left: 1%;
-	height: 50px;
+	padding-right: 3%;
+	height: 60px;
+	background-color: #fff;
 }
 nav .logo {
 	float: left;
@@ -25,7 +28,7 @@ nav .verline{
     margin: 0 10px;
     border-left:2px solid lightcoral;
 }
-img {
+.imgLogo {
     float: left;
     width: 60px;
     height: 60px;
@@ -112,3 +115,144 @@ nav .icon-burger .line {
 	}
 	
 }
+
+.header {
+	background-color: #f1f1f1;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	margin-top: 60px;
+  }
+  .row {
+	display: -webkit-flex;
+	display: flex;
+  }
+  .column {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px;
+  }
+  .footer {
+	padding: 10px;
+    margin: auto;
+    width: 15%;
+  }
+  .footer img {
+	width: 90px;
+	height: 40px;
+  }
+  @media (max-width: 600px) {
+	.row {
+	  -webkit-flex-direction: column;
+	  flex-direction: column;
+	}
+  }
+  .choicelabel {
+	width: 100%; 
+	text-align: center; 
+	border-bottom: 1px solid gray; 
+	line-height: 0.1em;
+	margin: 10px 0 20px; 
+ } 
+ 
+ .choicelabel span { 
+	 background:#fff; 
+	 padding:0 10px; 
+	 color: gray;
+	 font-size: 10px;
+ }
+ .rightcolum {
+	width: 60%;
+	margin: auto;
+	justify-content: center;
+}
+.rightcolum > p{
+	text-align: justify;
+	color: darkcyan;
+}
+.rightcolum > p> a{
+	text-decoration: none;
+}
+.submitbtn{
+	width: 30%;
+	background-color: black;
+	border-radius: 10px;
+}
+.right{
+	margin-top: 20px;
+	border-left: 1px dotted gray;
+}
+  form {
+	width: 50%;
+	margin: auto;
+	justify-content: center;
+}
+  input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  button:hover {
+	opacity: 0.8;
+  }
+  
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+  }
+  
+  .logintitle {
+	font-size: 30px;
+	font-weight: bold;
+  }
+
+  .sublabel{
+	color: gray;
+	font-size: 16px;
+  }
+
+  .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	border: 1px solid lightslategray;
+  }
+  
+  img.avatar {
+	width: 40%;
+  }
+  
+  .container {
+	padding: 16px;
+  }
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }

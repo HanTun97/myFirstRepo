@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,15 @@
     <title>Login - CS Help Desk</title>
     <link rel="stylesheet" href="./css/stylehelp.css">
 </head>
+
 <body>
     <header>
         <nav>
             <input id="nav-toggle" type="checkbox">
-            <img src="./img/miu.png" alt="MIU logo">
-            <div class="logo"> <div class="verline"></div><strong>Compro Help Desk</strong></div>
+            <img src="./img/miu.png" alt="MIU logo" class="imgLogo">
+            <div class="logo">
+                <div class="verline"></div><strong>Compro Help Desk</strong>
+            </div>
             <ul class="links">
                 <li><a href="#home">Agent Portal</a></li>
                 <li><a href="#about">Submit Ticket</a></li>
@@ -26,5 +30,58 @@
             </label>
         </nav>
     </header>
+    <main>
+        <div class="header">
+            <h2>Welcome to our Support Center</h2>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <form action="/action_page.php" method="post">
+                    <p class="logintitle">Login</p>
+                    <p class="sublabel">Login to know the status of the ticket</p>
+                    <div class="imgcontainer">
+                        <a href="#"><img src="./img/azure_ad.png" alt="Avatar" class="avatar"></a>
+                    </div>
+                    <p class="choicelabel"><span>or login using</span></p>
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+            <div class="column right">
+                <div class="rightcolum">
+                    <p>Login to track your existing support requests. If you have not created a ticket yet then you would need to <a href="#">register</a> or <a href="#">create a new ticket</a> to begin.</p>
+                    <button class="submitbtn">Submit Ticket</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="https://validator.w3.org/check?url=https://hantun97.github.io/myFirstRepo/helpdesk_login.html">
+                <img src="./img/w3c_logo.png" alt="Valid HTML!">
+            </a>
+            <a
+                href="http://jigsaw.w3.org/css-validator/validator?uri=https://hantun97.github.io/myFirstRepo/helpdesk_login.html">
+                <img src="./img/css_checker.png" alt="Valid CSS!">
+            </a>
+        </div>
+    </footer>
 </body>
+
 </html>
