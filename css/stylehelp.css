@@ -61,7 +61,7 @@
  	text-decoration: none;
  }
 
- #nav-toggle {
+ nav>#nav-toggle {
  	position: absolute;
  	top: -100px;
  }
@@ -82,6 +82,7 @@
  	border-radius: 3px;
  	transition: all .3s ease-in-out;
 	display: block;
+	pointer-events: none;
  }
 
  @media screen and (max-width: 768px) {
