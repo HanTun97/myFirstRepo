@@ -40,9 +40,11 @@
                 <form action="/action_page.php" method="post">
                     <p class="logintitle">Login</p>
                     <p class="sublabel">Login to know the status of the ticket</p>
-                    <div class="imgcontainer">
-                        <a href="#"><img src="./img/azure_ad.png" alt="Avatar" class="avatar"></a>
-                    </div>
+                    <a href="#">
+                        <div class="imgcontainer">
+                            <img src="./img/azure_ad.png" alt="Avatar" class="avatar">
+                        </div>
+                    </a>
                     <p class="choicelabel"><span>or login using</span></p>
                     <div class="container">
                         <label for="uname"><b>Username</b></label>
@@ -51,21 +53,19 @@
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="psw" required>
 
-                        <button type="submit">Login</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+
                         <label>
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
-                    </div>
-
-                    <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" class="cancelbtn">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        <button type="submit">Login</button>
                     </div>
                 </form>
             </div>
             <div class="column right">
                 <div class="rightcolum">
-                    <p>Login to track your existing support requests. If you have not created a ticket yet then you would need to <a href="#">register</a> or <a href="#">create a new ticket</a> to begin.</p>
+                    <p>Login to track your existing support requests. If you have not created a ticket yet then you
+                        would need to <a href="#">register</a> or <a href="#">create a new ticket</a> to begin.</p>
                     <button class="submitbtn">Submit Ticket</button>
                 </div>
             </div>
