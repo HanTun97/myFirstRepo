@@ -23,11 +23,11 @@
                 <li><a href="#base">Knowledge Base</a></li>
                 <li><a href="#login">Login</a></li>
             </ul>
-            <label for="nav-toggle" class="icon-burger">
-                <input type="button" class="line" value=" ">
-                <input type="button" class="line" value=" ">
-                <input type="button" class="line" value=" ">
-            </label>
+            <div id="icon" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
     <main>
@@ -82,6 +82,23 @@
             </a>
         </div>
     </footer>
+    <script>
+        document.getElementById('icon').addEventListener('click', cl_Div);
+        function cl_Div() {
+            var checkbox = document.getElementById('nav-toggle');
+            if (checkbox.checked){
+                checkbox.checked = false;
+            }else{
+                checkbox.checked = true;
+            }
+            
+        }
+        // $('.icon-burger').on('click', function () {
+        //     alert("aa");
+        //     var checkbox = $(this).children('input[type="checkbox"]');
+        //     checkbox.prop('checked', !checkbox.prop('checked'));
+        // });
+    </script>
 </body>
 
 </html>
