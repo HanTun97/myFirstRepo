@@ -61,7 +61,7 @@
  	text-decoration: none;
  }
 
- nav>#nav-toggle {
+ nav #nav-toggle {
  	position: absolute;
  	top: -100px;
  }
@@ -96,9 +96,9 @@
  		float: none;
  		position: fixed;
  		z-index: 9;
- 		left: 0;
+ 		left: auto;
  		right: 0;
- 		top: 100px;
+ 		top: 58px;
  		bottom: 100%;
  		width: auto;
  		height: auto;
