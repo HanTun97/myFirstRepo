@@ -81,6 +81,7 @@
  	margin: 5px;
  	border-radius: 3px;
  	transition: all .3s ease-in-out;
+	display: block;
  }
 
  @media screen and (max-width: 768px) {
