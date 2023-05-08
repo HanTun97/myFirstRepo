@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h3>Lab5 - JavaScript functions</h3>
+    <hr>
+    <ol>
+        <!-- lab 5.1 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Max of Two JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="num1" placeholder="Enter a Number">
+                <label for="num1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="num2" placeholder="Enter a Number">
+                <label for="num2">Enter a Number</label>
+            </div>
+            <div class="col-6">
+                <button type="submit" onclick="computeMax1()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res1"></span></h5>
+            </div>
+            <script src="./js/max.js"></script>
+        </div>
+
+        <!-- lab5.2 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Max of Three JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="num3" placeholder="Enter a Number">
+                <label for="num3">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="num4" placeholder="Enter a Number">
+                <label for="num4">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="num5" placeholder="Enter a Number">
+                <label for="num5">Enter a Number</label>
+            </div>
+            <div class="col-4">
+                <button type="submit" onclick="computeMax2()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res2"></span></h5>
+            </div>
+            <script src="./js/maxOfThree.js"></script>
+        </div>
+
+        <!-- lab5.3 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Vowel JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="vowel" maxlength="1" placeholder="Enter a Letter">
+                <label for="vowel">Enter a Letter</label>
+            </div>
+            <div class="col-8">
+                <button type="submit" onclick="findVowel()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res3"></span></h5>
+            </div>
+            <script src="./js/isvowel.js"></script>
+        </div>
+
+        <!-- lab5.4 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Sum Multiply JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="input1" placeholder="Enter a Number">
+                <label for="input1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="input2" placeholder="Enter a Number">
+                <label for="input2">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="input3" placeholder="Enter a Number">
+                <label for="input3">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="input4" placeholder="Enter a Number">
+                <label for="input4">Enter a Number</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="calculate()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <h5>Result: <span id="res4_1"></span></h5>
+                <h5>Result: <span id="res4_2"></span></h5>
+            </div>
+            <script src="./js/sum_multi.js"></script>
+        </div>
+
+        <!-- lab5.5 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Vowel JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="reverse" placeholder="Enter a Word">
+                <label for="reverse">Enter a Word</label>
+            </div>
+            <div class="col-8">
+                <button type="submit" onclick="changeReverse()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res5"></span></h5>
+            </div>
+            <script src="./js/reverse.js"></script>
+        </div>
+
+        <!-- lab5.6 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Longest Word JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="word1" placeholder="Enter a Word">
+                <label for="word1">Enter a Word</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="word2" placeholder="Enter a Word">
+                <label for="word2">Enter a Word</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="word3" placeholder="Enter a Word">
+                <label for="word3">Enter a Word</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="word4" placeholder="Enter a Word">
+                <label for="word4">Enter a Word</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="longestWord()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res6"></span></h5>
+            </div>
+            <script src="./js/findLongestWord.js"></script>
+        </div>
+
+        <!-- lab5.7 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Filter Longest Word JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="filter1" placeholder="Enter a Word">
+                <label for="filter1">Enter a Word</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="filter2" placeholder="Enter a Word">
+                <label for="filter3">Enter a Word</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="filter3" placeholder="Enter a Word">
+                <label for="filter3">Enter a Word</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="text" class="form-control" id="filter4" placeholder="Enter a Length">
+                <label for="filter4">Enter a Length</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="filterWords()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res7"></span></h5>
+            </div>
+            <script src="./js/filterLongWords.js"></script>
+        </div>
+
+        <!-- lab5.8 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Sum of Square JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="square1" placeholder="Enter a Number">
+                <label for="square1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="square2" placeholder="Enter a Number">
+                <label for="square2">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="square3" placeholder="Enter a Number">
+                <label for="square3">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="square4" placeholder="Enter a Number">
+                <label for="square4">Enter a Number</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="calculateSquareTotal()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res8"></span></h5>
+            </div>
+            <script src="./js/computeSumOfSquares.js"></script>
+        </div>
+
+        <!-- lab5.9 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Print Odd Number JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="odd1" placeholder="Enter a Number">
+                <label for="odd1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="odd2" placeholder="Enter a Number">
+                <label for="odd2">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="odd3" placeholder="Enter a Number">
+                <label for="odd3">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="odd4" placeholder="Enter a Number">
+                <label for="odd4">Enter a Number</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="oddNum()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res9"></span></h5>
+            </div>
+            <script src="./js/printOddNumbersOnly.js"></script>
+        </div>
+
+        <!-- lab5.10 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Sum of Even Square JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="se1" placeholder="Enter a Number">
+                <label for="se1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="se2" placeholder="Enter a Number">
+                <label for="se2">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="se3" placeholder="Enter a Number">
+                <label for="se3">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="se4" placeholder="Enter a Number">
+                <label for="se4">Enter a Number</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="calculateEvenSquareTotal()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res10"></span></h5>
+            </div>
+            <script src="./js/computeSumOfSquaresOfEvensOnly.js"></script>
+        </div>
+
+        <!-- lab5.11 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Sum Multiply With Reduce JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="rinput1" placeholder="Enter a Number">
+                <label for="rinput1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="rinput2" placeholder="Enter a Number">
+                <label for="rinput2">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="rinput3" placeholder="Enter a Number">
+                <label for="rinput3">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="rinput4" placeholder="Enter a Number">
+                <label for="rinput4">Enter a Number</label>
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="calculateSumMultiply()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <h5>Result: <span id="res11_1"></span></h5>
+                <h5>Result: <span id="res11_2"></span></h5>
+            </div>
+            <script src="./js/reduce.js"></script>
+        </div>
+
+        <!-- lab5.12 -->
+        <h4>
+            <small class="text-muted">
+                <li>Find Fibonacci sequence JS</li>
+            </small>
+        </h4>
+        <div class="row g-3">
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="fi1" placeholder="Enter a Number">
+                <label for="fi1">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="fi2" placeholder="Enter a Number">
+                <label for="fi2">Enter a Number</label>
+            </div>
+            <div class="form-floating col-md-2">
+                <input type="number" class="form-control" id="fi3" placeholder="Enter a Number">
+                <label for="fi3">Enter a Number</label>
+            </div>
+            <div class="col-4">
+                <button type="submit" onclick="fibo()" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+            <div class="col-2">
+                <p></p>
+                <h5>Result: <span id="res12"></span></h5>
+            </div>
+            <script src="./js/printFibo.js"></script>
+        </div>
+    </ol>
+
+</body>
+
+</html>
