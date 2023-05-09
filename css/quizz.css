@@ -1,0 +1,26 @@
+body {
+    background-color: yellow;
+    color: magenta;
+}
+
+p {
+    color: orange;
+    text-align: center;
+}
+
+.central,
+.item {
+    color: green;
+}
+
+#item {
+    background-color: cyan;
+}
+
+h1, h2{
+    background-image: url(https://manalabs.org/images/background.jpg);
+}
+
+input[type=text] {
+    font-family: Arial;
+}
