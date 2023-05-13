@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: yellow;
     color: magenta;
 }
@@ -23,4 +23,22 @@ h1, h2{
 
 input[type=text] {
     font-family: Arial;
-}
+} */
+
+/* quizz 2 */
+body { 
+    background-color: yellow; 
+    color: blue; 
+  } 
+  p { color: orange; } 
+  .central, .item { 
+    color: green;  
+  } 
+  #item { 
+    background-color: white; 
+  }
+  ul{
+   color: purple;
+   background-color: beige;
+  }
+  

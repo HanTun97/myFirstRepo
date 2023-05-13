@@ -181,3 +181,22 @@ p {
  */
 //Ans
 /* A */
+
+// Quizz 2
+let user = {
+    firstName: "John",
+    lastName: "Alice",
+    fullname() {
+        console.log(this.firstName + " " + this.lastName);
+    }
+};
+user.fullname();
+
+// let user = {
+//     firstName: "John",
+//     lastName: "Alice",
+//     fullname() {
+//         console.log(this.firstName + " " + this.lastName);
+//     }
+// };
+// setTimeout(user.fullname.bind(user), 1000);
