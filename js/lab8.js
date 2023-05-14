@@ -61,22 +61,18 @@
 // console.log("-----------------------------------------------");
 
 // Q3
-function User3(fname, lname, garr) {
-    this.firstName = fname,
-        this.lastName = lname,
-        this.grades = garr,
-        this.inputNewGrade = function (newGrade) {
-            this.grades.push(newGrade);
-        },
-        this.computeAverageGrade = function () {
-            const total_mark = this.grades.reduce((total, grade) => (total + grade), 0);
-            return total_mark / this.grades.length;
-        },
-        this.sort = function () {
-            return this.sort();
+Array.prototype.mysort = function () {
+    let arr = this;
+    let len = arr.length;
+    for (let i = len - 1; i >= 0; i--) {
+        for (let j = 1; j <= i; j++) {
+            if (arr[j - 1] > arr[j]) {
+                let temp = arr[j - 1];
+                arr[j - 1] = arr[j];
+                arr[j] = temp;
+            }
         }
-};
-let user3_1 = new User3("Jack3", "Lack", [66, 99, 86]);
-let user3_2 = new User3("Dove3", "Lovy", [50, 80, 40]);
-let userArr = ["ab", "aa"];
-console.log(userArr.sort());
+    }
+    return arr;
+}
+console.log([7, 5, 2, 4, 3, 9].mysort());
