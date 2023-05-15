@@ -31,6 +31,10 @@ console.log("Add new Grade!");
 usr2.inputNewGrade(90);
 console.log("Grade: " + usr2.grades + ", Avg Grade: " + usr2.computeAverageGrade());
 console.log("-----------------------------------------------");
+const students = [usr1, usr2];
+const result = students.reduce((average, stu, index, array) => average + stu.
+computeAverageGrade() / array.length, 0);
+console.log(result);
 
 // Q2
 function User(fname, lname, garr) {
@@ -59,6 +63,10 @@ console.log("Add new Grade!");
 user2.inputNewGrade(66);
 console.log("Grade: " + user2.grades + ", Avg Grade: " + user2.computeAverageGrade());
 console.log("-----------------------------------------------");
+const students2 = [user1, user2];
+const result2 = students2.reduce((average, stu, index, array) => average +
+stu.computeAverageGrade() / array.length, 0);
+console.log(result2);
 
 // Q3
 Array.prototype.mysort = function () {
